@@ -1,9 +1,9 @@
 module "vpc" {
-    source  = "terraform-google-modules/network/google"
+    source  = "terraform-google-modules/network"
     version = "~> 3.0"
 
     project_id   = var.project
-    network_name = "gaurav-network-3"
+    network_name = "gaurav-network-2"
     routing_mode = "GLOBAL"
 
     subnets = [
